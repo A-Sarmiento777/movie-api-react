@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import MovieAPI from './components/MovieAPI';
+
 import './App.css';
 
+
+//Api adress----- http://www.omdbapi.com/?apikey=ee2bebbc&s=star%20trek
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Header />
+     
+           <hr/>
+
+
+     <MovieAPI /> 
+
+            <hr/>
+
+      <Footer />
+      
     </div>
   );
 }
